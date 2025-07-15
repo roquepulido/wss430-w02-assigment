@@ -16,8 +16,8 @@ export default function EditInvoiceForm({
   invoice,
   customers,
 }: {
-  invoice: InvoiceForm;
-  customers: CustomerField[];
+  readonly invoice: InvoiceForm;
+  readonly customers: CustomerField[];
 }) {
   const updateInvoiceWithId = updateInvoice.bind(null, invoice.id);
   return (
